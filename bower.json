@@ -1,0 +1,6 @@
+{
+  "name": "ember-oauth-demo-project",
+  "dependencies": {
+    "bootstrap-sass": "3.3.5"
+  }
+}

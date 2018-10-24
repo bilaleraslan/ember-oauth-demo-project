@@ -7,6 +7,18 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('employee');
+  this.route('login');
+  this.route('register');
+
+  this.route('error', function() {
+    this.route('403');
+    this.route('401');
+    this.route('404');
+  });
+
+  // 404
+  this.route('error.404', { path: '/*wildcard' });
 });
 
 export default Router;

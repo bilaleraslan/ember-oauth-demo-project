@@ -16,10 +16,10 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+    COOKIEDOAMIN :'',
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      API_HOST: 'http://192.168.1.6:18084',
+      API_TOKENENDPOINT :'http://192.168.1.6:18085/oauth/token'
     }
   };
 
@@ -46,6 +46,35 @@ module.exports = function(environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
   }
+
+  ENV['ember-toastr'] = {
+      injectAs: 'toast',
+      toastrOptions: {
+        closeButton: true,
+        debug: false,
+        newestOnTop: true,
+        progressBar: true,
+        positionClass: 'toast-top-right',
+        preventDuplicates: true,
+        onclick: null,
+        showDuration: '300',
+        hideDuration: '1000',
+        timeOut: '4000',
+        extendedTimeOut: '1000',
+        showEasing: 'swing',
+        hideEasing: 'linear',
+        showMethod: 'fadeIn',
+        hideMethod: 'fadeOut'
+      }
+    };
+
+  ENV['ember-simple-auth'] = {
+      routeAfterAuthentication: 'index',
+      crossOriginWhitelist: [
+        'http://10.6.221.129:4200',
+        'https://10.6.221.129:18081'
+      ]
+    };
 
   return ENV;
 };
