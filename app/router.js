@@ -19,6 +19,7 @@ Router.map(function() {
 
   // 404
   this.route('error.404', { path: '/*wildcard' });
+  this.route('country');
 });
 
 export default Router;

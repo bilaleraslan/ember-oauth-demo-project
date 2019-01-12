@@ -1,0 +1,24 @@
+<h1>Coıntry</h1>
+<button class="btn btn-lg btn-primary btn-block"  type="submit"  {{action "onClick"}} >Button</button>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Ulke Id</th>
+      <th scope="col">Ulke Adı</th>
+      <th scope="col">Bolge Id</th>
+    </tr>
+  </thead>
+  <tbody>
+ {{#each model.countryList as |c index|}}
+    <tr>
+      <th scope="row">{{index}}</th>
+      <td>{{c.countryId}}</td>
+      <td>{{c.countryName}}</td>
+      <td>{{c.regionId}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
+
+{{outlet}}

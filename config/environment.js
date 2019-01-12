@@ -18,8 +18,8 @@ module.exports = function(environment) {
     },
     COOKIEDOAMIN :'',
     APP: {
-      API_HOST: 'http://192.168.1.6:18084',
-      API_TOKENENDPOINT :'http://192.168.1.6:18085/oauth/token'
+      API_HOST: 'http://192.168.1.101/backend',
+      API_TOKENENDPOINT :'http://192.168.1.101:28085/oauth/token'
     }
   };
 
@@ -71,8 +71,8 @@ module.exports = function(environment) {
   ENV['ember-simple-auth'] = {
       routeAfterAuthentication: 'index',
       crossOriginWhitelist: [
-        'http://10.6.221.129:4200',
-        'https://10.6.221.129:18081'
+        'http://172.17.0.1:4200',
+        'https://172.17.0.1:18081'
       ]
     };
 

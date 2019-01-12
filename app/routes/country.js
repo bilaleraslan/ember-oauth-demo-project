@@ -8,14 +8,13 @@ export default Route.extend({
   },
   model() {
      return hash({
-      empList : this.get('ajax').request('/employee-list-all/'),
+      countryList : this.get('ajax').request('/country-list-all/'),
     });
 
   },
   actions: {
     onClick()
     {
-      this.get('ajax').request('/employee-list-all21/');
     },
  }
 });

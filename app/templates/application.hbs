@@ -7,6 +7,7 @@
     {{#navbar.content}}
       {{#navbar.nav as |nav|}}
         {{#nav.item}}{{#link-to 'employee' }} Employee {{/link-to}}{{/nav.item}}
+        {{#nav.item}}{{#link-to 'country' }} Country {{/link-to}}{{/nav.item}}
         {{#nav.item}}
            {{#if session.isAuthenticated}}
             <a {{action 'invalidateSession'}}>Logout</a>
