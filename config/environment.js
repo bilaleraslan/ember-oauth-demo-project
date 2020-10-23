@@ -18,8 +18,8 @@ module.exports = function(environment) {
     },
     COOKIEDOAMIN :'',
     APP: {
-      API_HOST: 'http://192.168.1.101/backend',
-      API_TOKENENDPOINT :'http://192.168.1.101:28085/oauth/token'
+      API_HOST: 'http://127.0.0.1:18084',
+      API_TOKENENDPOINT :'http://127.0.0.1:18085/oauth/token'
     }
   };
 

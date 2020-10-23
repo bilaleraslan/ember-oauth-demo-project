@@ -8,9 +8,13 @@ module.exports = function(defaults) {
     'ember-bootstrap': {
       'bootstrapVersion': 3,
       'importBootstrapFont': true,
-      'importBootstrapCSS': false
+      'importBootstrapCSS': false,
+       blacklist: ['bs-popover', 'bs-accordion']
+
     },
   });
+
+  
 
   // Use `app.import` to add additional libraries to the generated
   // output files.

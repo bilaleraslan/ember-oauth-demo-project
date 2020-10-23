@@ -8,7 +8,7 @@ export default Route.extend({
   },
   model() {
      return hash({
-      countryList : this.get('ajax').request('/country-list-all/'),
+      countryList : this.get('ajax').request('/country-list-all'),
     });
 
   },

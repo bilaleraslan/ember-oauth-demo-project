@@ -4,35 +4,6 @@
 @import '404';
 @import 'tingle';
 @import 'custombox';
-.navbar {
-    margin-bottom: 0px !important;
-}
-html,body {
-  height:100%;
-  width: 100%;
-}
 
-#header {
-    height: 100px;
-    background-color: grey;
-}
 
-#maincontainer {
-    background-color: #DDDDDD;
-    position: absolute;
-    top: 51px;
-    bottom: 0;
-    width: 100%;
-}
 
-#registercontainer {
-    margin-top: 50px;
-    margin-left: 30%;
-    bottom: 0;
-    width: 33%;
-}
-
-.custom-h1
-{
-  font-size: larger
-}
