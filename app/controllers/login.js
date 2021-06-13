@@ -14,7 +14,7 @@ export default Controller.extend({
         var comp = this;
         this.get('session').authenticate('authenticator:oauth2', identification, password,scope,headers)
              .then(function () { //result
-                comp.get('userService').loadCurrentUser();
+                // comp.get('userService').loadCurrentUser();   ->   application.js ->sessionAuthenticated()
               }).catch((reason) => {
                   comp.set('errorMessage', reason.error_description);
                 });
